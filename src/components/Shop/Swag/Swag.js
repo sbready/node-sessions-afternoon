@@ -14,7 +14,10 @@ class Swag extends Component {
           <div id="Swag__priceContainer">
             <span > ${ price.toFixed(2) } </span>
           </div>
-          <div id="Swag__atcContainer" onClick={ () => addToCart( id ) }>
+          <div id="Swag__atcContainer" onClick={ () => {
+            alert('Item added to Cart')
+            addToCart( id )
+          }}>
             <span> Add to Cart </span>
           </div>
         </div>
